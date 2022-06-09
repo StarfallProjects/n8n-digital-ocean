@@ -1,0 +1,11 @@
+spec:
+  name: n8n-digital-ocean
+  services:
+    - name: n8n
+      git: 
+        branch: master
+        repo_clone_url: https://github.com/n8n-io/n8n.git
+      envs:
+        - key: 
+          value:
+          type: 
