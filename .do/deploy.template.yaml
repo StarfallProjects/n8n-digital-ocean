@@ -1,30 +1,30 @@
 spec:
   name: n8n-digital-ocean
   services:
-  - name: n8n
-    git: 
-      branch: master
-      repo_clone_url: https://github.com/StarfallProjects/n8n-digital-ocean.git
-    build_command: npm install -g lerna && npm run bootstrap && npm run build 
-    envs:
-      - key: N8N_EDITOR_BASE_URL
-        value: ${APP_URL}
-      - key: N8N_HOST
-        value: ${PUBLIC_URL}
-      - key: N8N_PORT
-        value: "8080"
-      - key: N8N_LISTEN_ADDRESS
-        value: ${PRIVATE_URL}
-      - key: DB_POSTGRESDB_HOST
-        value: ${HOSTNAME}
-      - key: DB_POSTGRESDB_PORT
-        value: ${PORT}
-      - key: DB_POSTGRESDB_USER
-        value: ${USERNAME}
-      - key: DB_POSTGRESDB_PASSWORD
-        value: ${PASSWORD}
-    databases:
     - name: n8n
-      engine: PG
-      db_name: n8n
-      db_user: admin
+      git: 
+        branch: master
+        repo_clone_url: https://github.com/StarfallProjects/n8n-digital-ocean.git
+      build_command: npm install -g lerna && npm run bootstrap && npm run build 
+      envs:
+        - key: N8N_EDITOR_BASE_URL
+          value: ${APP_URL}
+        - key: N8N_HOST
+          value: ${PUBLIC_URL}
+        - key: N8N_PORT
+          value: "8080"
+        - key: N8N_LISTEN_ADDRESS
+          value: ${PRIVATE_URL}
+        - key: DB_POSTGRESDB_HOST
+          value: ${HOSTNAME}
+        - key: DB_POSTGRESDB_PORT
+          value: ${PORT}
+        - key: DB_POSTGRESDB_USER
+          value: ${USERNAME}
+        - key: DB_POSTGRESDB_PASSWORD
+          value: ${PASSWORD}
+      databases:
+      - name: n8n
+        engine: PG
+        db_name: n8n
+        db_user: admin
