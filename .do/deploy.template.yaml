@@ -11,7 +11,6 @@ spec:
       - key: N8N_HOST
         value: "where-n8n-runs"
       - key: N8N_PORT
-        value: 0000
-        type: number
+        value: "your-port"
       - key: N8N_LISTEN_ADDRESS
         value: "IP-address-to-listen-on"
