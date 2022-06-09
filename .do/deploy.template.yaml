@@ -8,10 +8,21 @@ spec:
     build_command: npm install -g lerna && npm run bootstrap && npm run build 
     envs:
       - key: N8N_EDITOR_BASE_URL
-        value: "${APP_URL}"
+        value: ${APP_URL}
       - key: N8N_HOST
-        value: "${PUBLIC_URL}"
+        value: ${PUBLIC_URL}
       - key: N8N_PORT
         value: 8080
       - key: N8N_LISTEN_ADDRESS
-        value: "${PRIVATE_URL}"
+        value: ${PRIVATE_URL}
+  databases:
+  - name: n8n
+    envs:
+      - key: DB_POSTGRESDB_HOST
+        value: ${HOSTNAME}
+      - key: DB_POSTGRESDB_PORT
+        value: ${PORT}
+      - key: DB_POSTGRESDB_USER
+        value: ${USERNAME}
+      - key: DB_POSTGRESDB_PASSWORD
+        value: ${PASSWORD}
