@@ -23,8 +23,8 @@ spec:
         value: ${USERNAME}
       - key: DB_POSTGRESDB_PASSWORD
         value: ${PASSWORD}
-  databases:
-  - name: n8n
-    engine: PG
-    db_name: n8n
-    db_user: admin
+    databases:
+    - name: n8n
+      engine: PG
+      db_name: n8n
+      db_user: admin
