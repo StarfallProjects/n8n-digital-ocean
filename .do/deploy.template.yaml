@@ -5,6 +5,7 @@ spec:
     git: 
       branch: master
       repo_clone_url: https://github.com/StarfallProjects/n8n-digital-ocean.git
+    build_command: npm install -g lerna && npm run bootstrap && npm run build 
     envs:
       - key: N8N_EDITOR_BASE_URL
         value: "your-editor-URL"
