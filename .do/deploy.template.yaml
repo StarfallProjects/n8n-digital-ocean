@@ -15,12 +15,6 @@ spec:
         value: "8080"
       - key: N8N_LISTEN_ADDRESS
         value: ${PRIVATE_URL}
-  databases:
-  - name: n8n
-    engine: PG
-    db_name: n8n
-    db_user: admin
-    envs:
       - key: DB_POSTGRESDB_HOST
         value: ${HOSTNAME}
       - key: DB_POSTGRESDB_PORT
@@ -29,3 +23,8 @@ spec:
         value: ${USERNAME}
       - key: DB_POSTGRESDB_PASSWORD
         value: ${PASSWORD}
+  databases:
+  - name: n8n
+    engine: PG
+    db_name: n8n
+    db_user: admin
