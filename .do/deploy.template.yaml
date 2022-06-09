@@ -6,6 +6,12 @@ spec:
         branch: master
         repo_clone_url: https://github.com/n8n-io/n8n.git
       envs:
-        - key: 
-          value:
-          type: 
+        - key: N8N_EDITOR_BASE_URL
+          value: "your-editor-URL"
+        - key: N8N_HOST
+          value: "where-n8n-runs"
+        - key: N8N_PORT
+          value: "your-port"
+          type: number
+        - key: N8N_LISTEN_ADDRESS
+          value: "IP-address-to-listen-on"
