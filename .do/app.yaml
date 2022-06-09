@@ -1,0 +1,16 @@
+name: n8n-digital-ocean
+  services:
+  - name: n8n
+    git: 
+      branch: master
+      repo_clone_url: https://github.com/StarfallProjects/n8n-digital-ocean.git
+    envs:
+    - key: N8N_EDITOR_BASE_URL
+      value: "your-editor-URL"
+    - key: N8N_HOST
+      value: "where-n8n-runs"
+    - key: N8N_PORT
+      value: "your-port"
+      type: number
+    - key: N8N_LISTEN_ADDRESS
+      value: "IP-address-to-listen-on"
