@@ -17,6 +17,9 @@ spec:
         value: ${PRIVATE_URL}
   databases:
   - name: n8n
+    engine: PG
+    db_name: n8n
+    db_user: admin
     envs:
       - key: DB_POSTGRESDB_HOST
         value: ${HOSTNAME}
