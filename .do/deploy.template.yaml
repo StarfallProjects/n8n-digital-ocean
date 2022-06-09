@@ -11,8 +11,6 @@ spec:
         value: ${APP_URL}
       - key: N8N_HOST
         value: ${_self.PUBLIC_URL}
-      - key: N8N_PORT
-        value: "8080"
       - key: N8N_LISTEN_ADDRESS
         value: "0.0.0.0"
       - key: DB_POSTGRESDB_DATABASE
