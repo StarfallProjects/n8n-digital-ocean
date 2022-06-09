@@ -32,5 +32,5 @@ spec:
   databases:
   - name: n8n-db
     engine: PG
-    db_name: n8n
+    db_name: n8n-db
     db_user: admin
