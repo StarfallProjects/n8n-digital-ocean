@@ -10,21 +10,25 @@ spec:
         - key: N8N_EDITOR_BASE_URL
           value: ${APP_URL}
         - key: N8N_HOST
-          value: ${PUBLIC_URL}
+          value: ${_self.PUBLIC_URL}
         - key: N8N_PORT
           value: "8080"
         - key: N8N_LISTEN_ADDRESS
-          value: ${PRIVATE_URL}
+          value: ${_self.PRIVATE_URL}
         - key: DB_POSTGRESDB_HOST
-          value: ${HOSTNAME}
+          value: ${n8n-db.HOSTNAME}
+          scope: RUN_TIME
         - key: DB_POSTGRESDB_PORT
-          value: ${PORT}
+          value: ${n8n-db.PORT}
+          scope: RUN_TIME
         - key: DB_POSTGRESDB_USER
-          value: ${USERNAME}
+          value: ${n8n-db.USERNAME}
+          scope: RUN_TIME
         - key: DB_POSTGRESDB_PASSWORD
-          value: ${PASSWORD}
-      databases:
-      - name: n8n
+          value: ${n8n-db.PASSWORD}
+          scope: RUN_TIME
+    databases:
+      - name: n8n-db
         engine: PG
         db_name: n8n
         db_user: admin
