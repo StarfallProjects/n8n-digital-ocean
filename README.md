@@ -1,5 +1,7 @@
 # n8n - Workflow Automation Tool
 
+[![Deploy to DO](https://www.deploytodo.com/do-btn-blue.svg)](https://cloud.digitalocean.com/apps/new?repo=https://github.com/n8n-io/n8n/tree/master)
+
 ![n8n.io - Workflow Automation](https://raw.githubusercontent.com/n8n-io/n8n/master/assets/n8n-logo.png)
 
 n8n is an extendable workflow automation tool. With a [fair-code](http://faircode.io) distribution model, n8n will always have visible source code, be available to self-host, and allow you to add your own custom functions, logic and apps. n8n's node-based approach makes it highly versatile, enabling you to connect anything to everything.
@@ -75,3 +77,4 @@ Have you found a bug :bug: ? Or maybe you have a nice feature :sparkles: to cont
 n8n is [fair-code](http://faircode.io) distributed under the [**Sustainable Use License**](https://github.com/n8n-io/n8n/blob/master/packages/cli/LICENSE.md).
 
 Additional information about license can be found in the [FAQ](https://docs.n8n.io/#/faq?id=license).
+
