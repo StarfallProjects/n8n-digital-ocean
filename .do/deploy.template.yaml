@@ -14,7 +14,7 @@ spec:
       - key: N8N_PORT
         value: "8080"
       - key: N8N_LISTEN_ADDRESS
-        value: ${_self.PRIVATE_URL}
+        value: "0.0.0.0"
       - key: DB_POSTGRESDB_DATABASE
         value: "n8n-db"
       - key: DB_POSTGRESDB_HOST
